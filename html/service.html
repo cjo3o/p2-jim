@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="p201.css">
+    <link rel="stylesheet" href="../css/service.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/c2939216d2.js" crossorigin="anonymous"></script>
 </head>
@@ -18,7 +18,7 @@
                     <div class="info-circle">
                         <h3 class="info-circle-num">01</h3>
                         <h3 class="info-circle-txt">예약</h3>
-                        <img src="images/check.png" alt="예약">
+                        <img src="../images/check.png" alt="예약">
                         <p>원하는 서비스를 선택하고<br/> 온라인 결제 완료!</p>
                     </div>
                 </li>
@@ -26,7 +26,7 @@
                     <div class="info-circle">
                         <h3 class="info-circle-num">02</h3>
                         <h3 class="info-circle-txt">이동/보관</h3>
-                        <img src="images/move.png" alt="이동,보관">
+                        <img src="../images/move.png" alt="이동,보관">
                         <p>예약 일정에 맞추어<br/>짐을 맡겨주세요.</p>
                     </div>
                 </li>
@@ -34,7 +34,7 @@
                     <div class="info-circle">
                         <h3 class="info-circle-num">03</h3>
                         <h3 class="info-circle-txt">수령</h3>
-                       <img src="images/weight.png" alt="예약">
+                       <img src="../images/weight.png" alt="예약">
                         <p>예약한 장소에 배송된<br/>짐을 찾아주세요.</p>
                     </div>
                 </li>
@@ -99,36 +99,54 @@
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.7947745150423!2d128.6251565750966!3d35.87854581911083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565e19245c87b9f%3A0x391cab6391812c8c!2z64-Z64yA6rWs!5e0!3m2!1sko!2skr!4v1738728014201!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <ul class="map-icon">
-            <li>
+        <div class="map-under">
+            <div class="map-under-icon">
                 <a href="">
-                    <i class="fa-light fa-location-dot"></i>
-                    <p class="map-txt">대구공항</p>
-                    <p class="map-time">09:00 ~ 20:00</p>
+                    <span class="map-icon-title">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>동대구역</p>
+                    </span>
+                    <div class="map-icon-time">
+                        <p>09:00 ~ 20:00</p>
+                    </div>
                 </a>
-            </li>
-            <li>
+            </div>
+            <div class="map-under-icon">
                 <a href="">
-                    <i class="fa-light fa-location-dot"></i>
-                    <p class="map-txt">동대구역</p>
-                    <p class="map-time">09:00 ~ 20:00</p>
+                    <span class="map-icon-title">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>대구공항</p>
+                    </span>
+                    <div class="map-icon-time">
+                        <p>09:00 ~ 20:00</p>
+                    </div>
                 </a>
-            </li>
-            <li>
+            </div>
+            <div class="map-under-icon">
                 <a href="">
-                    <i class="fa-light fa-location-dot"></i>
-                    <p class="map-txt">경주역</p>
-                    <p class="map-time">09:00 ~ 20:00</p>
+                    <span class="map-icon-title">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>인천공항</p>
+                    </span>
+                    <div class="map-icon-time">
+                        <p>09:00 ~ 20:00</p>
+                    </div>
                 </a>
-            </li>
-            <li>
+            </div>
+            <div class="map-under-icon">
                 <a href="">
-                    <i class="fa-light fa-location-dot"></i>
-                    <p class="map-txt">인천공항</p>
-                    <p class="map-time">09:00 ~ 20:00</p>
+                    <span class="map-icon-title">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>경주역</p>
+                    </span>
+                    <div class="map-icon-time">
+                        <p>09:00 ~ 20:00</p>
+                    </div>
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
+
+
 
     </div><!--container-->
 
