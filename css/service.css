@@ -29,13 +29,14 @@ li{
     color: dodgerblue;
     font-weight: bold;
     font-size: 2.0rem;
-    margin-top: 3rem;
+    margin-top: 6rem;
     margin-bottom: 1rem;
 }
-#container .sub-title{
+.sub-title{
     font-size: 1.2rem;
     text-align: center;
     margin-bottom: 3rem;
+    line-height: 2rem;
 }
 .info-service ul{
     display: flex;
@@ -149,7 +150,58 @@ li{
 .map-icon-time{
     color: white;
 }
-
-
+.local{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.local-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    background-color: rgba(51, 133, 214, 0.8);
+    border-radius: 50%;
+    margin: -0.8rem;
+}
+.local-icon2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    background-color: rgba(255, 173, 51, 0.8);
+    border-radius: 50%;
+    margin: -0.8rem;
+    z-index: 100;
+}
+.local-icon3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    background-color: rgba(127, 139, 149, 0.8);
+    border-radius: 50%;
+    margin: -0.8rem;
+}
+.local-img{
+    width: 6rem;
+    height: 6rem;
+}
+.local-txt-k{
+    margin-top: 0.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.local-txt-e{
+    color: white;
+    font-size: 0.8rem;
+}
 
 
