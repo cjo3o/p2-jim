@@ -1,0 +1,243 @@
+
+@font-face {
+    font-family: "KoPub Dotum";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url("https://cdn.jsdelivr.net/gh/fonts-archive/KoPubDotum/KoPubDotum-Light.woff2")
+    format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/KoPubDotum/KoPubDotum-Light.woff")
+    format("woff"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/KoPubDotum/KoPubDotum-Light.otf")
+    format("opentype"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/KoPubDotum/KoPubDotum-Light.ttf")
+    format("truetype");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "KoPub Dotum", serif ;
+}
+li{
+    list-style: none;
+}
+#container{
+}
+.title{
+    text-align: center;
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 2.0rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+.sub-title{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    line-height: 2rem;
+}
+.info-service ul{
+    display: flex;
+    justify-content: center;
+}
+.info-circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.li-info-circle{
+    background-color: rgba(246, 246, 246, 1);
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 50%;
+    width: 18rem;
+    height: 18rem;
+    text-align: center;
+}
+.info-circle-num{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgba(254, 174, 54, 1);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.info-circle-txt{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+
+.info-circle p{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.how-to-use{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 3rem;
+}
+.how-to-use a{
+    background-color: rgba(128, 128, 128, 1);
+    color: rgba(247, 247, 247, 1);
+    width: 15rem;
+    height: 3rem;
+    border-radius: 2rem;
+    position: relative;
+    padding-right: 1rem;
+}
+.how-to-use a::after{
+    content: "?";
+    color: rgba(128, 128, 128, 1);
+    background-color: rgba(247, 247, 247, 1);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+    position: absolute;
+    top: 0.75rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+.use-circle{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 3rem auto 5rem;
+}
+.use-circle li{
+    width: 50%;
+    margin: 1%;
+}
+.info-mini-circle{
+    text-align: center;
+}
+.info-mini-circle i{
+    font-size: 3rem;
+    padding: 2.5rem;
+    border-radius: 50%;
+    background-color: rgba(246, 246, 246, 1);
+    margin-bottom: 1rem;
+}
+.map{
+    display: flex;
+    justify-content: center;
+}
+.map iframe{
+    width: 50%;
+}
+.map-under{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.map-under-icon{
+    margin: 1rem;
+    background-color: rgba(255, 153, 0, 1);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 10rem;
+    text-align: center;
+}
+.map-icon-title{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.map-icon-title p{
+    display: inline-block;
+}
+.map-icon-time{
+    color: white;
+}
+.local{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.local-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    background-color: rgba(51, 133, 214, 0.8);
+    border-radius: 50%;
+    margin: -0.8rem;
+}
+.local-icon2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    background-color: rgba(255, 173, 51, 0.8);
+    border-radius: 50%;
+    margin: -0.8rem;
+    z-index: 100;
+}
+.local-icon3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    background-color: rgba(127, 139, 149, 0.8);
+    border-radius: 50%;
+    margin: -0.8rem;
+}
+.local-img{
+    width: 6rem;
+    height: 6rem;
+}
+.local-txt-k{
+    margin-top: 0.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.local-txt-e{
+    color: white;
+    font-size: 0.8rem;
+}
+.how-to{
+    display: flex;
+    justify-content: center;
+}
+.how-to-use2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+}
+.use-icon{
+    background-color: rgba(246, 246, 246, 1);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    width: 100%;
+}
+.use-step{
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 153, 0, 1);
+    margin-bottom: 1rem;
+}
+.use-tit{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.use-txt{
+    font-size: 0.8rem;
+}
+
