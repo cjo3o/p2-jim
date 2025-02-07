@@ -22,6 +22,19 @@
 li{
     list-style: none;
 }
+table{
+    border-collapse: collapse;
+    border-top: 1px solid rgba(223, 223, 223, 1);
+    text-align: center;
+}
+th, td{
+    border-bottom: 1px solid rgba(223, 223, 223, 1);
+    border-left: 1px solid rgba(223, 223, 223, 1);
+    padding: 10px;
+}
+th:first-child, td:first-child {
+    border-left: none;
+}
 #container{
 }
 .title{
@@ -106,7 +119,7 @@ li{
 .use-circle{
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 50rem;
     margin: 3rem auto 5rem;
 }
 .use-circle li{
@@ -216,14 +229,13 @@ li{
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 70%;
 }
 .use-icon{
     background-color: rgba(246, 246, 246, 1);
     padding: 1.5rem;
     border-radius: 1rem;
     margin: 1rem;
-    width: 100%;
+    width: 13rem;
 }
 .use-step{
     color: white;
@@ -239,5 +251,39 @@ li{
 }
 .use-txt{
     font-size: 0.8rem;
+    text-align: center;
 }
+.group-img{
+    display: flex;
+    justify-content: center;
+}
+.group-img img{
+    width: 50rem;
+    margin-top: 2rem;
+    margin-left: 5rem
+}
+.td{
+    margin: 2rem auto 5rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
 
+}
+.price-td{
+    width: 55rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+.price-td th{
+    background-color: rgba(0, 102, 204, 1);
+    color: white;
+}
+.price-txt{
+    color: red;
+}
+.price-local{
+    background-color: rgba(222, 235, 248, 1);
+}
+.price-start{
+    background-color: rgba(242, 242, 242, 1);
+}
