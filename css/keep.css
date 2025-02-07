@@ -154,6 +154,12 @@
     text-align: right;
 }
 
+.keep_search > input {
+    margin-right: 16px;
+    height: 2rem;
+    border-radius: ;
+}
+
 .keep_adr_container {
     background-color: purple;
     padding: 1rem;
@@ -166,21 +172,44 @@
     background-color: #ccc;
     height: 200px;
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .keep_adr_infor {
     background-color: #fff;
 }
 
-.keep_adr > a {
-    background-color: #fff;
-
+.title {
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
+.location::before {
+    content: url("../images/location.png");
+    margin-right: 7px;
+}
+
+.location {
+    margin: 10px 0;
+}
+
+.keep_adr > a {
+    display: inline-block;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    padding: 13px 0;
+    width: 50%;
+    text-align: center;
+}
+
+.keep_adr > a:hover {
+    background-color: #ffb74c;
+    color: white;
+}
 
 .footer {
-    /*position: absolute;*/
-    /*bottom: 0;*/
     background-color: #343333;
     width: 100%;
     height: 191px;
