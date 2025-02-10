@@ -167,31 +167,123 @@ th:first-child, td:first-child {
 .map-icon-time{
     color: white;
 }
-.go-res{
+.local{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5rem auto;
 }
-.go-res-tit{
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 1.5rem;
-}
-.go-res a{
-    text-decoration: none;
-    cursor: pointer;
-    background-color: dodgerblue;
-    border-radius: 1rem;
-    padding: 1.2rem;
-    margin: 1rem;
-    font-size: 1.5rem;
-    text-align: center;
-    font-weight: bold;
-    color: white;
+.local-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 15rem;
+    height: 15rem;
+    background-color: rgba(51, 133, 214, 0.8);
+    border-radius: 50%;
+    margin: -0.8rem;
 }
-.go-res a::after{
-    margin-left: 1rem;
-    content: ">";
+.local-icon2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    background-color: rgba(255, 173, 51, 0.8);
+    border-radius: 50%;
+    margin: -0.8rem;
+    z-index: 100;
+}
+.local-icon3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    background-color: rgba(127, 139, 149, 0.8);
+    border-radius: 50%;
+    margin: -0.8rem;
+}
+.local-img{
+    width: 6rem;
+    height: 6rem;
+}
+.local-txt-k{
+    margin-top: 0.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.local-txt-e{
+    color: white;
+    font-size: 0.8rem;
+}
+.how-to{
+    display: flex;
+    justify-content: center;
+}
+.how-to-use2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.use-icon{
+    background-color: rgba(246, 246, 246, 1);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    width: 13rem;
+}
+.use-step{
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 153, 0, 1);
+    margin-bottom: 1rem;
+}
+.use-tit{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.use-txt{
+    font-size: 0.8rem;
+    text-align: center;
+}
+.group-img{
+    display: flex;
+    justify-content: center;
+}
+.group-img img{
+    width: 50rem;
+    margin-top: 2rem;
+    margin-left: 5rem
+}
+.td{
+    margin: 2rem auto 5rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+
+}
+.price-td{
+    width: 55rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+.price-td th{
+    background-color: rgba(0, 102, 204, 1);
+    color: white;
+}
+.price-txt{
+    color: red;
+}
+.price-local{
+    background-color: rgba(222, 235, 248, 1);
+}
+.price-start{
+    background-color: rgba(242, 242, 242, 1);
 }
