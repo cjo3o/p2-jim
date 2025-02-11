@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "KoPub Dotum";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url("https://cdn.jsdelivr.net/gh/fonts-archive/KoPubDotum/KoPubDotum-Light.woff2")
+    format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/KoPubDotum/KoPubDotum-Light.woff")
+    format("woff"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/KoPubDotum/KoPubDotum-Light.otf")
+    format("opentype"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/KoPubDotum/KoPubDotum-Light.ttf")
+    format("truetype");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "KoPub Dotum", serif ;
+}
+li{
+    list-style: none;
+}
+.title{
+    text-align: center;
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 2.0rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+.sub-title{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    line-height: 2rem;
+}
+.how-to{
+    display: flex;
+    justify-content: center;
+}
+.how-to-use2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.use-icon{
+    background-color: rgba(246, 246, 246, 1);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    width: 13rem;
+}
+.use-step{
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    background-color: darkblue;
+    margin-bottom: 1rem;
+}
+.use-tit{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.use-txt{
+    font-size: 0.8rem;
+    text-align: center;
+}
+.search-btn{
+    display: flex;
+    justify-content: center;
+}
+.search-btn a{
+    text-decoration: none;
+    cursor: pointer;
+    background-color: dodgerblue;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 15rem;
+}
