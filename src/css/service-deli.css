@@ -121,6 +121,9 @@ th:first-child, td:first-child {
     margin: 1rem;
     width: 13rem;
 }
+.use-icon:hover{
+    background-color: rgba(238, 238, 238, 1);
+}
 .use-step{
     color: white;
     font-weight: bold;
@@ -134,8 +137,14 @@ th:first-child, td:first-child {
     font-size: 1.2rem;
 }
 .use-txt{
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
+}
+.use-icon img{
+    width: 5rem;
+    height: 5rem;
+    padding: 0.5rem;
+    margin: 1rem auto;
 }
 .group-img{
     display: flex;

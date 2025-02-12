@@ -18,39 +18,28 @@
     box-sizing: border-box;
     font-family: "KoPub Dotum", serif ;
 }
-li{
-    list-style: none;
-}
 .title{
     text-align: center;
     color: dodgerblue;
     font-weight: bold;
     font-size: 2.0rem;
-    margin-top: 6rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
 }
-.box-ul{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    background-color: lightgray;
-}
-.box-li{
-    width: 20rem;
-    flex: 0 0 23%;
+.umm{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    border: 1px dashed darkgray;
-    padding: 0.5rem;
+    align-items: center;
 }
-.box-li i{
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.umm > img{
+    margin-top: 6rem;
+    width: 10rem;
 }
-.box-li h3{
-    font-size: 1rem;
+.text-ul li p,div{
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
-
+.t{
+    font-weight: bold;
+}
