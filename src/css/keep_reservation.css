@@ -14,21 +14,18 @@
 }
 
 .keep_reservation_contents_container {
-  background-color: #ccc;
   overflow: hidden;
   width: 100%;
 }
 
 .keep_reservation_contents {
-  background-color: #ffb74c;
   overflow: hidden;
-  width: 80%;
+  width: 70%;
   margin: 4rem auto;
   padding: 0 1rem;
 }
 
 .keep_reservation_contents_text {
-  background-color: #0066CC;
   overflow: hidden;
   text-align: center;
   margin: 1.5rem 0;
@@ -39,13 +36,15 @@
 }
 
 .keep_reservation_contents_main {
-  background-color: rebeccapurple;
+  overflow: hidden;
   width: 100%;
   margin-top: 4rem;
 }
 
-.keep_reservation_contents_main_date {
-  background-color: #80bdff;
+.keep_reservation_contents_main_date,
+.keep_reservation_contents_main_user,
+.keep_reservation_contents_main_luggage_infor {
+  margin: 1rem 0;
 }
 
 .keep_reservation_contents_main_title {
@@ -56,14 +55,12 @@
 }
 
 .keep_reservation_contents_main_box {
-  background-color: #ff6c6c;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 .keep_reservation_contents_main_box_input-box {
-  background-color: #0066CC;
   display: flex;
   align-items: center;
   margin: 1rem 1rem 0 1rem;
@@ -71,13 +68,12 @@
 }
 
 .input-box_title {
-  background-color: #80bdff;
+  margin-left: 10px;
   line-height: 4rem;
   width: 25%;
 }
 
 .input-box_content {
-  background-color: green;
   width: 75%;
   height: 100%;
   text-align: center;
@@ -103,10 +99,13 @@
 }
 
 .agreement_container {
-  background-color: aqua;
   width: 100%;
   text-align: center;
   margin-top: 2rem;
+}
+
+.agreement_container > a {
+  font-weight: bold;
 }
 
 .agreement {
@@ -118,7 +117,6 @@
 }
 
 .keep_reservation_contents_main_luggage {
-  background-color: #ff3333;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -126,7 +124,6 @@
 }
 
 .luggage_box {
-  background-color: aqua;
   width: 20%;
   border: solid 1px #ccc;
   text-align: center;
@@ -182,6 +179,13 @@
   margin: 1rem 0;
   padding: 2rem 6rem;
   font-size: 1rem;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.5s;
+}
+
+.keep_reserve_btn > button:hover {
+  background-color: #b80000;
+
 }
