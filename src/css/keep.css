@@ -1,5 +1,4 @@
 .wrap {
-    background-color: #ccc;
     width: 100%;
 }
 
@@ -118,10 +117,8 @@
 }
 
 .contents {
-    background-color: red;
     margin-top: 87px;
     width: 100%;
-    /*height: 1500px;*/
 }
 
 .section1 {
@@ -131,37 +128,54 @@
 }
 
 .keep_container {
-    background-color: #ccc;
     width: 100%;
-}
-
-.keep_contents > h1 {
-    background-color: #ffb74c;
-    text-align: center;
-    margin-top: 2rem;
+    overflow: hidden;
 }
 
 .keep_contents {
-    background-color: green;
+    overflow: hidden;
+}
+
+.keep_contents > h1 {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.keep_contents {
     width: 70%;
     margin: 0 auto;
-    height: 800px;
 }
 
 .keep_search {
-    background-color: blue;
     margin: 1.5rem 0;
     text-align: right;
 }
 
-.keep_search > input {
+.keep_search_container {
+    display: inline-block;
     margin-right: 16px;
+    position: relative;
+}
+
+.keep_search_container > form > input {
     height: 2rem;
-    border-radius: ;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.search_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2rem;
+    width: 2rem;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
 }
 
 .keep_adr_container {
-    background-color: purple;
     padding: 1rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -169,16 +183,12 @@
 }
 
 .keep_adr {
-    background-color: #ccc;
+    background-color: #e8e8e8;
     height: 200px;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.keep_adr_infor {
-    background-color: #fff;
 }
 
 .title {
@@ -207,6 +217,24 @@
 .keep_adr > a:hover {
     background-color: #ffb74c;
     color: white;
+}
+
+.keep_board_controler {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 0 16px;
+    display: flex;
+    gap: 2rem;
+}
+
+.keep_board_controler_btn {
+    background-color: #f4f4f4;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    align-content: center;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 .footer {
