@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/check.css">
+</head>
+
+<body>
+<div class="wrap">
+    <div class="header">
+
+    </div>
+    <div class="contents">
+        <div class="section1">
+
+        </div>
+        <div class="check_container">
+            <div class="check_contents">
+                <div class="check_contents_text">
+                    <h1>보관/배송 내역 조회</h1>
+                    <p>맡긴 짐의 보관, 배송 상태를 조회할 수 있습니다.</p>
+                </div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>수화물 번호</th>
+                        <th>보관 일자</th>
+                        <th>보관 장소</th>
+                        <th>가격</th>
+                        <th>상태</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2025-02-13</td>
+                        <td>대구광역시 ㅇㅇㅇㅇㅇㅇㅇ</td>
+                        <td>26000</td>
+                        <td>보관중</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</div>
+<script src="/dropdown.js"></script>
+<script src="reserve.js"></script>
+<script>
+    let $totalPrice = document.querySelector('#total_price');
+
+    function minus(a) {
+        if (a.parentNode.children[1].value > 0) {
+            a.parentNode.children[1].value--;
+            $totalPrice.innerText = Number($totalPrice.innerText) - Number(a.parentNode.getAttribute('data-price'));
+        }
+    }
+
+    function plus(a) {
+        a.parentNode.children[1].value++;
+        $totalPrice.innerText = Number($totalPrice.innerText) + Number(a.parentNode.getAttribute('data-price'));
+    }
+</script>
+</body>
+
+</html>

@@ -20,29 +20,47 @@
         <div class="keep_reservation_contents_container">
             <div class="keep_reservation_contents">
                 <div class="keep_reservation_contents_text">
-                    <h1>보관예약 안내</h1>
-                    <p>보관장소와 일자를 선택해 주세요.</p>
+                    <h1>배송예약 안내</h1>
+                    <p>배송장소와 일자를 선택해 주세요.</p>
                 </div>
                 <div class="keep_reservation_contents_main">
                     <div class="keep_reservation_contents_main_date">
                         <div class="keep_reservation_contents_main_title">
-                            <p>보관 일자, 장소 선택</p>
+                            <p>배송 일자 선택</p>
                         </div>
                         <div class="keep_reservation_contents_main_box">
                             <div class="keep_reservation_contents_main_box_input-box">
                                 <div class="input-box_title">
-                                    보관 일자
+                                    배송 일자
                                 </div>
                                 <div class="input-box_content">
                                     <input type="date" name="" id="date" placeholder="보관 일자">
                                 </div>
                             </div>
+                            <div class="keep_reservation_contents_main_box_input-box" style="border: none; background-color: #dddddd; padding-left: 1rem">
+                                ※ 익일 배송수량은 10개까지 가능합니다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="keep_reservation_contents_main_date">
+                        <div class="keep_reservation_contents_main_title">
+                            <p>배송 장소 선택</p>
+                        </div>
+                        <div class="keep_reservation_contents_main_box">
                             <div class="keep_reservation_contents_main_box_input-box">
                                 <div class="input-box_title">
-                                    보관 장소
+                                    출발지
                                 </div>
                                 <div class="input-box_content">
-                                    <input type="text" name="" id="location" placeholder="보관 장소">
+                                    <input type="text" name="" id="start" placeholder="출발지">
+                                </div>
+                            </div>
+                            <div class="keep_reservation_contents_main_box_input-box">
+                                <div class="input-box_title">
+                                    도착지
+                                </div>
+                                <div class="input-box_content">
+                                    <input type="text" name="" id="arrive" placeholder="도착지">
                                 </div>
                             </div>
                         </div>
@@ -114,7 +132,7 @@
                                 </div>
                                 <div class="luggage_box_content">
                                     <h4>소형</h4>
-                                    <div class="luggage" data-price="1000">
+                                    <div class="luggage" data-price="2000">
                                         <button id="sm" onclick="minus(this)">-</button>
                                         <input type="text" name="" id="small" value="0" readonly>
                                         <button id="sp" onclick="plus(this)">+</button>
@@ -127,7 +145,7 @@
                                 </div>
                                 <div class="luggage_box_content">
                                     <h4>중형</h4>
-                                    <div class="luggage" data-price="3000">
+                                    <div class="luggage" data-price="4000">
                                         <button id="mm" onclick="minus(this)">-</button>
                                         <input type="text" name="" id="medium" value="0" readonly>
                                         <button id="mp" onclick="plus(this)">+</button>
@@ -140,7 +158,7 @@
                                 </div>
                                 <div class="luggage_box_content">
                                     <h4>대형</h4>
-                                    <div class="luggage" data-price="5000">
+                                    <div class="luggage" data-price="6000">
                                         <button id="lm" onclick="minus(this)">-</button>
                                         <input type="text" name="" id="large" value="0" readonly>
                                         <button id="lp" onclick="plus(this)">+</button>
@@ -161,7 +179,7 @@
                 </div>
                 <div class="keep_reserve_btn">
                     <button>
-                        보관 예약
+                        배송 예약
                     </button>
                 </div>
             </div>

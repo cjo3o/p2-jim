@@ -220,7 +220,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("images/main_3.png");
+    background-image: url("/src/images/main_3.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

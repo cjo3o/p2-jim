@@ -1,191 +1,191 @@
 .wrap {
-  width: 100%;
+    width: 100%;
 }
 
 .contents {
-  margin-top: 87px;
-  width: 100%;
+    margin-top: 87px;
+    width: 100%;
 }
 
 .section1 {
-  background-color: rebeccapurple;
-  width: 100%;
-  height: 210px;
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 210px;
 }
 
 .keep_reservation_contents_container {
-  overflow: hidden;
-  width: 100%;
+    overflow: hidden;
+    width: 100%;
 }
 
 .keep_reservation_contents {
-  overflow: hidden;
-  width: 70%;
-  margin: 4rem auto;
-  padding: 0 1rem;
+    overflow: hidden;
+    width: 70%;
+    margin: 4rem auto;
+    padding: 0 1rem;
 }
 
 .keep_reservation_contents_text {
-  overflow: hidden;
-  text-align: center;
-  margin: 1.5rem 0;
+    overflow: hidden;
+    text-align: center;
+    margin: 1.5rem 0;
 }
 
 .keep_reservation_contents_text > p {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 .keep_reservation_contents_main {
-  overflow: hidden;
-  width: 100%;
-  margin-top: 4rem;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 4rem;
 }
 
 .keep_reservation_contents_main_date,
 .keep_reservation_contents_main_user,
 .keep_reservation_contents_main_luggage_infor {
-  margin: 1rem 0;
+    margin: 1rem 0;
 }
 
 .keep_reservation_contents_main_title {
-  background-color: #ccc;
-  text-align: center;
-  font-size: 1.2rem;
-  padding: 1.5rem 0;
+    background-color: #ccc;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1.5rem 0;
 }
 
 .keep_reservation_contents_main_box {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .keep_reservation_contents_main_box_input-box {
-  display: flex;
-  align-items: center;
-  margin: 1rem 1rem 0 1rem;
-  border-bottom: solid 1px black;
+    display: flex;
+    align-items: center;
+    margin: 1rem 1rem 0 1rem;
+    border-bottom: solid 1px black;
 }
 
 .input-box_title {
-  margin-left: 10px;
-  line-height: 4rem;
-  width: 25%;
+    margin-left: 10px;
+    line-height: 4rem;
+    width: 25%;
 }
 
 .input-box_content {
-  width: 75%;
-  height: 100%;
-  text-align: center;
-  align-content: center;
+    width: 75%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
 }
 
 .input-box_content > input,
 .input-box_content > select {
-  width: 70%;
-  height: 50%;
-  border: none;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 1.1rem;
-  appearance: none;
+    width: 70%;
+    height: 50%;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+    appearance: none;
 }
 
 .input-box_content > input:focus,
 .input-box_content > select:focus {
-  outline: none;
-  border: solid 2px black;
-  border-radius: 5px;
+    outline: none;
+    border: solid 2px black;
+    border-radius: 5px;
 }
 
 .agreement_container {
-  width: 100%;
-  text-align: center;
-  margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .agreement_container > a {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .agreement {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .keep_reservation_contents_main_luggage {
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .luggage_box {
-  width: 20%;
-  border: solid 1px #ccc;
-  text-align: center;
+    width: 20%;
+    border: solid 1px #ccc;
+    text-align: center;
 }
 
 .luggage_box_content {
-  padding: 1rem;
+    padding: 1rem;
 }
 
 .luggage_box_content > h4 {
-  line-height: 3rem;
+    line-height: 3rem;
 }
 
 .luggage {
-  display: flex;
+    display: flex;
 }
 
 .luggage > button {
-  background-color: #0066CC;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 0.7rem 0.5rem;
-  cursor: pointer;
+    background-color: #0066CC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 0.5rem;
+    cursor: pointer;
 }
 
 .luggage > input {
-  background-color: #dfdfdf;
-  width: 80%;
-  border: none;
-  border-radius: 5px;
-  text-align: center;
-  padding: 0.7rem 0;
-  font-size: 1.1rem;
+    background-color: #dfdfdf;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.7rem 0;
+    font-size: 1.1rem;
 }
 
 .payment_infor {
-  margin-top: 1rem;
-  text-align: center;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 .payment_infor > h1 {
-  margin-top: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .keep_reserve_btn {
-  text-align: center;
+    text-align: center;
 }
 
 .keep_reserve_btn > button {
-  background-color: #002eb8;
-  color: white;
-  margin: 1rem 0;
-  padding: 2rem 6rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.5s;
+    background-color: #002eb8;
+    color: white;
+    margin: 1rem 0;
+    padding: 2rem 6rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
 }
 
 .keep_reserve_btn > button:hover {
-  background-color: #b80000;
+    background-color: #b80000;
 
 }
