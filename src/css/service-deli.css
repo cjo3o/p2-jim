@@ -180,3 +180,43 @@ th:first-child, td:first-child {
 .price-start{
     background-color: rgba(242, 242, 242, 1);
 }
+.timeofs{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.timeofs-tit{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.timeofs-1li{
+    list-style: A;
+    padding: 0.5rem;
+}
+.timeofs-2li{
+    list-style: disc;
+    margin-left: 1rem;
+    padding: 0.5rem;
+
+}
+.timewrap1, .timewrap2{
+    background-color: rgba(246, 246, 246, 1);
+    padding: 3rem;
+    border-radius: 1rem;
+    width: 30rem;
+    margin : 2rem 1rem 0 0;
+}
+.notice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto;
+}
+.notice img{
+    margin-right: 4rem;
+}
+.test{
+    list-style-type: disc;
+    line-height: 1.5rem;
+}
