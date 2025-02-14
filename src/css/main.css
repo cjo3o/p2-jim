@@ -5,18 +5,27 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
 form {
     position: absolute;
-    margin-top: 100px;
+    top: 30%;
     z-index: 10;
     display: flex;
+    width: 400px;
     flex-direction: column; /* 세로 정렬 */
     align-items: flex-start; /* 왼쪽 정렬 */
-    width: 344px;
-    height: 290px;
+    justify-content: center;
     background: #f0f0f0; /* 배경색 추가 */
     padding: 20px;
 }
+
+select {
+    appearance: none; /* 기본 화살표 제거 (브라우저 기본 스타일 제거) */
+    background: url('https://cdn-icons-png.flaticon.com/512/271/271210.png') no-repeat right 10px center;
+    background-size: 12px; /* 화살표 크기 조정 */
+    padding-right: 30px; /* 오른쪽 공간 확보 (버튼 공간) */
+}
+
 
 select, input[type="text"] {
     width: 100%;
@@ -24,25 +33,23 @@ select, input[type="text"] {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .ph_num {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    gap: 5px;
 }
 
-.ph_num input {
+.ph_num input{
     flex: 1; /* 입력 필드 크기를 자동 조절 */
     padding-left: 10px;
-
 }
-
-.ph_num span {
-    justify-content: center;
-    width: 10px;
+.ph_num span{
+    align-items: center;
+    display: flex;
 }
 
 .agree {
@@ -53,16 +60,19 @@ select, input[type="text"] {
 }
 
 .privacy_btn {
+    width: 170px;
+    height: 33px;
     background: #666;
     color: white;
     padding: 8px 12px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
-
+.agree label {
+    padding-left: 10px;
+}
 .agree input[type="checkbox"] {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 button.submit {
@@ -73,8 +83,19 @@ button.submit {
     font-size: 18px;
     font-weight: bold;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    letter-spacing: 0.5px;
+}
+button.submit img {
+    width: 11px;
+    margin-left: 5px;
+    height: auto;
+
 }
 .main_section {
     width: 100%;
@@ -134,7 +155,7 @@ button.submit {
 .booking {
     width: 211px;
     height: 57px;
-    background-color: #f7a01e;
+    background: #ff8c00;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -457,4 +478,4 @@ button.submit {
     to {
         transform: translate(0, 5px);
     }
-}
+    }

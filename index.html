@@ -11,19 +11,19 @@
 <body>
 <div class="wrap">
     <div class="header">
+    </div>
 
-    </div>
-    <div class="flxed_menu_hidden">
-        <a href="/" class="flxed_toggle">
-            <img src="/src/icon/togglebt.png" alt="">
-            빠른상담신청
-        </a>
-    </div>
     <form name="flxedform" action="">
+        <div class="form-container">
+            <div class="formhd"></div>
+            <a href="/"><img src="/src/icon/togglebt.png" alt="">
+                빠른상담신청</a>
+        </div>
+
         <input type="hidden" name="mode" value="insert">
 
         <select name="package" id>
-            <option value="" disabled selected>패키지 종류</option>
+            <option value="">패키지 종류</option>
             <option value="1">캐리어</option>
             <option value="2">백팩</option>
             <option value="3">박스</option>
@@ -45,7 +45,7 @@
             <label for="agree">동의함</label>
         </div>
 
-        <button type="submit" class="submit">신청하기</button>
+        <button type="submit" class="submit">신청하기 <img src="src/icon/togglebt.png"></button>
     </form>
     <div class="main_section">
         <div class="swiper-slide">
