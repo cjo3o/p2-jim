@@ -183,7 +183,7 @@ th:first-child, td:first-child {
 .timeofs{
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin: 3rem auto;
 }
 .timeofs-tit{
     font-weight: bold;
@@ -198,20 +198,25 @@ th:first-child, td:first-child {
     list-style: disc;
     margin-left: 1rem;
     padding: 0.5rem;
-
 }
 .timewrap1, .timewrap2{
     background-color: rgba(246, 246, 246, 1);
     padding: 3rem;
     border-radius: 1rem;
     width: 30rem;
-    margin : 2rem 1rem 0 0;
+}
+.timewrap2{
+    margin-left: 2rem;
 }
 .notice{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 4rem auto;
+    width: 63rem;
+    height: 10rem;
+    border-radius: 1rem;
+    border: 3px dashed rgba(223, 223, 223, 1);
 }
 .notice img{
     margin-right: 4rem;

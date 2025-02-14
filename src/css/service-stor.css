@@ -35,6 +35,31 @@ li{
     margin-bottom: 3rem;
     line-height: 2rem;
 }
+.search-btn{
+    margin : 0 auto;
+    width: 18rem;
+    height: 5rem;
+    border : 3.5px solid #44311A;
+    border-radius: 3rem;
+    text-align: center;
+    line-height: 5rem;
+    cursor: pointer;
+}
+.search-btn:hover{
+    background-color: rgba(246, 246, 246, 1);
+}
+.search-btn a{
+    color: #44311A;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.search-btn i{
+    color: #44311A;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 0.8rem;
+}
 .how-to{
     display: flex;
     justify-content: center;
@@ -52,12 +77,15 @@ li{
     margin: 1rem;
     width: 13rem;
 }
+.use-icon:hover{
+    background-color: rgba(238, 238, 238, 1);
+}
 .use-step{
     color: white;
     font-weight: bold;
     padding: 0.5rem;
     border-radius: 2rem;
-    background-color: darkblue;
+    background-color: rgba(255, 153, 0, 1);
     margin-bottom: 1rem;
 }
 .use-tit{
@@ -65,23 +93,13 @@ li{
     font-size: 1.2rem;
 }
 .use-txt{
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
 }
-.search-btn{
-    display: flex;
-    justify-content: center;
+.use-icon img{
+    width: 5rem;
+    height: 5rem;
+    padding: 0.5rem;
+    margin: 1rem auto;
 }
-.search-btn a{
-    text-decoration: none;
-    cursor: pointer;
-    background-color: dodgerblue;
-    border-radius: 1rem;
-    padding: 1.2rem;
-    margin: 1rem;
-    font-size: 1.5rem;
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    width: 15rem;
-}
+
