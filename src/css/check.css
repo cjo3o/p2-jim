@@ -62,19 +62,22 @@
 }
 
 .keep_table {
-    display: block;
+    overflow: hidden;
+    height: 0;
     transform: translateY(100px);
     opacity: 0;
 
 }
 
 .delivery_table {
-    display: none;
+    overflow: hidden;
+    height: 0;
     transform: translateY(100px);
     opacity: 0;
 }
 
 .up {
+    height: auto;
     transform: translateY(0);
     opacity: 1;
     transition: all 0.5s;
