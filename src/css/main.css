@@ -5,10 +5,13 @@
     flex-direction: column;
     justify-content: space-between;
 }
-
+body {
+    overflow-x: auto; /* 가로 스크롤 가능하게 */
+    white-space: nowrap; /* 줄바꿈 방지 */
+}
 .form-wrapper {
     position: fixed;  /* 스크롤해도 고정 */
-    top: 30%; /* 화면 상단에서 30% 위치 */
+    top: 30%;
     z-index: 100;
     display: flex;
     flex-direction: column;
@@ -17,29 +20,36 @@
 
 .form-container {
     width: 100%;
-    height: 60px; /* 크기 증가 */
+    height: 60px;
     background-color: rgb(0, 102, 204);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15px;
     color: white;
-    font-size: 18px;
-    font-weight: bold;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-}
-.form-container a {
     display: flex;
     align-items: center;
-    text-decoration: none;
-    color: white;
-    gap: 10px;
-    flex-grow: 1
+    justify-content: space-between; /* 양쪽 끝 정렬 */
+    padding: 0 30px;
 }
-.form-container img {
+.form-container .icon {
+    height: 30px;
+    margin-right: 10px;
+}
+.form-container .arrow {
     height: 24px;
     margin-left: auto;
+}
+.form-container a {
+    text-decoration: none;
+    color: white;
+    flex-grow: 1;
+    font-size: 23px;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.form-container img {
+    position: relative;
+    height: 24px;
 }
 
 form {
@@ -356,6 +366,7 @@ button.submit img {
     width: 100%;
     max-width: 1100px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
     margin-top: 50px;
