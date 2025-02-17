@@ -51,6 +51,7 @@ ul, li {
 .menu {
     width: 60%;
     z-index:1;
+    font-size: 20px;
 }
 
 .menu > ul {
@@ -65,14 +66,18 @@ ul, li {
     display: block;
     line-height: 87px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e1e1e;
 }
 
 .menu > ul > li > a:hover {
     color: #ffb74c;
+    font-weight: bold;
 }
 
 .language {
+    font-size: 20px;
     width: 20%;
     display: flex;
     align-items: center;
@@ -84,7 +89,8 @@ ul, li {
     border-bottom: solid 1px #0066CC;
     line-height: 35px;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .select_language::after {
@@ -141,74 +147,59 @@ ul, li {
 }
 
 .footer {
-    background-color: #343333;
+    display: flex;
     width: 100%;
     height: 191px;
-    display: flex;
+    background-color: rgb(52,52,51);
+    padding-left: 125px;
     align-items: center;
-    justify-content: center;
+    margin-top: auto;
+    position: relative;
 }
-
-.footer_infor {
-    width: 1240px;
-    height: 46px;
-    display: flex;
-}
-
-.footer_infor_con1 {
-    width: 700px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding-right: 20px;
-    border-right: solid 1px #ededed;
-}
-
-.footer_infor_con1 > ul > li,
-.footer_infor_con1 > ul > li > span {
-    color: white;
-}
-
-.footer_infor_con1 > ul > li > span::before {
-    content: "";
-    border-left: solid 1px white;
-    opacity: 0.4;
-    display: inline-block;
-    height: 12px;
-    margin: 0 10px;
-}
-
-.footer_infor_con2 {
-    width: calc(100% - 700px);
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-left: 20px;
-    font-size: 0.7rem;
-}
-
-.footer_infor_con2 > ul {
+.footer img {
     width: 112px;
-    height: 100%;
+}
+.footer p {
+    padding-left: 30px;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    color: rgb(228, 228, 228);
+    line-height: 1.5;
+}
+.footer-divider {
+    width: 1px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.527); /* 흰색 선 */
+    margin: 0 40px; /* 좌우 간격 */
+}
+.footer-links {
     display: flex;
     flex-direction: column;
+    gap: 3px;
+    align-items: center;
+}
+
+.footer-btn {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    width: 112px;
+    height: 21px;
+    background-color: #000; /* 검정 배경 */
+    color: white; /* 흰색 텍스트 */
+    font-size: 12px;
+    text-decoration: none;
     text-align: center;
-    gap: 4px;
+
 }
 
-.footer_infor_con2 > ul > li {
-    text-align: center;
+.footer-btn:hover {
+    background-color: #201f1f;
 }
 
-.footer_infor_con2 > ul > li > a {
-    display: block;
-    color: white;
-    background-color: #232323;
-    line-height: 21px;
-}
+#COPYRIGHT {
+    position: absolute;
+    left: 70%;
+    font-size: 10px;
 
-.footer_infor_con2 > p {
-    margin-left: 120px;
-    color: white;
 }
