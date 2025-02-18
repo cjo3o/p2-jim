@@ -49,6 +49,7 @@
                             배송
                         </div>
                     </div>
+                    <p style="margin-top: 1rem">※ 보관장소를 클릭하시면 상세정보를 볼 수 있습니다.</p>
                 </div>
                 <div class="keep_table up">
                     <table>
@@ -65,21 +66,21 @@
                         <tr>
                             <td>1</td>
                             <td>2025-02-13</td>
-                            <td>대구광역시 ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</td>
+                            <td onclick="openDetail()">대구광역시 ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</td>
                             <td>26000</td>
                             <td>보관중</td>
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>2025-02-13</td>
-                            <td>대구광역시 ㅇㅇㅇㅇㅇㅇㅇ</td>
+                            <td onclick="openDetail()">대구광역시 ㅇㅇㅇㅇㅇㅇㅇ</td>
                             <td>26000</td>
                             <td>보관중</td>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td>2025-02-13</td>
-                            <td>대구광역시 ㅇㅇㅇㅇㅇㅇㅇㅇddddd</td>
+                            <td onclick="openDetail()">대구광역시 ㅇㅇㅇㅇㅇㅇㅇㅇddddd</td>
                             <td>26000</td>
                             <td>보관중</td>
                         </tr>
@@ -101,21 +102,21 @@
                         <tr>
                             <td>1</td>
                             <td>2025-02-13</td>
-                            <td>대구광역시 ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</td>
+                            <td onclick="openDetail()">대구광역시 ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</td>
                             <td>26000</td>
                             <td>보관중</td>
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>2025-02-13</td>
-                            <td>대구광역시 ㅇㅇㅇㅇㅇㅇㅇ</td>
+                            <td onclick="openDetail()">대구광역시 ㅇㅇㅇㅇㅇㅇㅇ</td>
                             <td>26000</td>
                             <td>보관중</td>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td>2025-02-13</td>
-                            <td>대구광역시 ㅇㅇㅇㅇㅇㅇㅇㅇddddd</td>
+                            <td onclick="openDetail()">대구광역시 ㅇㅇㅇㅇㅇㅇㅇㅇddddd</td>
                             <td>26000</td>
                             <td>보관중</td>
                         </tr>
@@ -132,6 +133,20 @@
 </div>
 <script src="/dropdown.js"></script>
 <script src="/change_btn.js"></script>
+<script>
+        const $close = document.querySelector('.close');
+        const $check_detail = document.querySelector('.check_detail');
+
+        $close.addEventListener('click', function () {
+            $check_detail.style.display = 'none';
+        })
+
+        function openDetail() {
+            $check_detail.style.display = 'flex';
+            console.log($check_detail);
+        }
+
+</script>
 </body>
 
 </html>
