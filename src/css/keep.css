@@ -212,6 +212,7 @@
     padding: 13px 0;
     width: 50%;
     text-align: center;
+    transition: all 0.3s;
 }
 
 .keep_adr > a:hover {
