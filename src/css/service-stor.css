@@ -179,7 +179,7 @@ li{
     border-radius: 1rem;
 }
 .host-bg{
-    margin: 2rem auto;
+    margin: 2rem auto 4rem;
     background-image: url('/src/images/working.jpg');
     background-size: cover;
     background-position: center;
@@ -211,4 +211,14 @@ li{
 
 .host-btn:hover {
     background-color: rgba(0, 0, 0, 0.7);
+}
+.host-tit{
+    text-align: center;
+}
+.host-txt{
+    display: flex;
+    justify-content: center;
+}
+.host-txt3 i{
+    width: 5rem;
 }

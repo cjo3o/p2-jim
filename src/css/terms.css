@@ -18,6 +18,9 @@
     box-sizing: border-box;
     font-family: "KoPub Dotum", serif ;
 }
+#container{
+    padding: 5rem;
+}
 .title{
     text-align: center;
     color: dodgerblue;
