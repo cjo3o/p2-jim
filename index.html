@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="/src/css/reset.css">
     <link rel="stylesheet" href="/src/css/main.css">
 </head>
-
+<script src="/dropdown.js"></script>
+<script src="/menu_hidden.js"></script>
 <body>
 <div class="wrap">
     <div class="header">
@@ -19,8 +20,7 @@
             <a href="/">빠른 예약</a>
             <img src="/src/icon/togglebt.png" class="arrow" alt="화살표 아이콘"> <!-- 화살표 아이콘 -->
         </div>
-    </div>
-    <form name="flxedform" action="">
+        <form name="flxedform" action="">
         <input type="hidden" name="mode" value="insert">
 
         <select name="package" id>
@@ -48,6 +48,8 @@
 
         <button type="submit" class="submit">신청하기 <img src="src/icon/togglebt.png"></button>
     </form>
+    </div>
+
     <div class="main_section">
         <div class="swiper-slide">
             <img src="/src/images/main_1.png" alt="슬라이드 이미지 1" class="slide-image">
@@ -132,8 +134,6 @@
         <a href=""><img src="src/icon/sideicon%20(3).svg" alt="" id="fb"></a>
     </div>
 </div>
-<script src="/dropdown.js"></script>
-<script src="/menu_hidden.js"></script>
 </body>
 
 </html>

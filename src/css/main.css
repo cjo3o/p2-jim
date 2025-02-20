@@ -1,35 +1,49 @@
-.wrap {
+html, body {
     width: 100%;
+    height: 100%;
+    overflow-x: auto; /* 가로 스크롤 추가 */
+    white-space: nowrap; /* 줄바꿈 방지 */
+}
+.wrap {
+    width: 1920px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transform-origin: top left;
+    transition: transform 0.3s ease-in-out;
 }
-body {
-    overflow-x: auto; /* 가로 스크롤 가능하게 */
-    white-space: nowrap; /* 줄바꿈 방지 */
-}
+
 .form-wrapper {
-    position: fixed;  /* 스크롤해도 고정 */
-    top: 30%;
-    right: -330px;
+    position: fixed;
+    top: 29%;
+    left: -290px; /* ✅ 처음에는 왼쪽으로 숨김 */
     width: 330px;
     z-index: 100;
     flex-direction: column;
-    margin: 0;
     text-align: left;
-    left: 0;
-    transition: right 0.3s ease-in-out;
-}
-.form-wrapper.active {
-    right: 0;
-}
+    transition: left 0.3s ease-in-out;
+    cursor: pointer;
+    transform: none;
 
+}
+.form-wrapper.open {
+    left: 0;
+}
+.toggle-button {
+    position: absolute;
+    top: 50%;
+    right: -30px; /* 버튼이 살짝 보이도록 */
+    width: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
 .form-container {
     width: 100%;
     height: 60px;
     background-color: rgb(0, 102, 204);
-    color: white;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     display: flex;
@@ -37,6 +51,10 @@ body {
     justify-content: space-between; /* 양쪽 끝 정렬 */
     padding: 0 30px;
     cursor: pointer;
+    position: relative;
+    z-index: 101;
+    border: none;
+    outline: none;
 }
 .form-container .icon {
     height: 30px;
@@ -62,16 +80,23 @@ body {
 }
 
 form {
-    position: fixed;
-    top: 37%;
-    z-index: 10;
-    display: flex;
-    width: 290px;
-    flex-direction: column; /* 세로 정렬 */
-    align-items: flex-start; /* 왼쪽 정렬 */
-    justify-content: center;
-    background: #f0f0f0; /* 배경색 추가 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    width: 90%;
+    height: auto;
     padding: 20px;
+    background: #f0f0f0;
+    position: relative;
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+}
+.form-wrapper.open form {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 select {
@@ -379,12 +404,11 @@ button.submit img {
 .service {
     position: relative;
     width: 100%;
-    max-width: 1100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
-    margin-top: 80px;
+    margin-top: 100px;
     top: 5%;
     z-index: 4;
 }
