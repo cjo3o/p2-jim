@@ -51,9 +51,26 @@ th:first-child, td:first-child {
     margin-bottom: 3rem;
     line-height: 2rem;
 }
+@media (max-width: 768px) { /* 화면 크기가 768px 이하일 때 */
+    .sub-title {
+        font-size: 0; /* 텍스트를 숨기기 위해 글자 크기를 0으로 설정 */
+        visibility: hidden; /* 텍스트가 보이지 않도록 설정 */
+    }
+
+    .sub-title strong {
+        visibility: visible; /* strong 텍스트는 보이도록 설정 */
+        font-size: 1.2rem; /* strong 크기 조정 */
+    }
+
+    .title {
+        font-size: 1.8rem;  /* 작은 화면에서 제목 크기 조정 */
+    }
+}
 .info-service ul{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
 }
 .info-circle{
     display: flex;
@@ -69,6 +86,33 @@ th:first-child, td:first-child {
     width: 18rem;
     height: 18rem;
     text-align: center;
+    flex-direction: column; /* 세로 정렬 */
+    min-width: 18rem;  /* 최소 너비 설정 */
+    min-height: 18rem; /* 최소 높이 설정 */
+}
+@media (max-width: 768px) { /* 화면 크기가 768px 이하일 때 */
+    .info-service ul {
+        flex-direction: column;  /* 세로로 배치 */
+        align-items: center;     /* 가운데 정렬 */
+    }
+
+    .li-info-circle {
+        width: 18rem;  /* 크기 고정 */
+        height: 18rem; /* 크기 고정 */
+        margin: 1rem 0;
+    }
+
+    .info-circle-num {
+        font-size: 1.2rem;
+    }
+
+    .info-circle-txt {
+        font-size: 1rem;
+    }
+
+    .info-circle p {
+        font-size: 0.9rem;
+    }
 }
 .info-circle-num{
     text-align: center;
@@ -147,6 +191,7 @@ th:first-child, td:first-child {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+    flex-wrap: wrap;
 }
 .map-under-icon{
     margin: 1rem;
@@ -154,6 +199,7 @@ th:first-child, td:first-child {
     padding: 1.5rem;
     border-radius: 1rem;
     width: 10rem;
+    max-width: 10rem;  /* 최대 너비를 10rem으로 고정 */
     text-align: center;
 }
 .map-icon-title{
@@ -167,16 +213,38 @@ th:first-child, td:first-child {
 .map-icon-time{
     color: white;
 }
+/* 기본 상태 (큰 화면에서 3개씩 한 줄) */
+@media (min-width: 1200px) {
+    .map-under-icon {
+        width: 10rem;  /* 3개씩 한 줄 */
+    }
+}
+
+/* 화면이 중간 크기일 때 (두 개씩 두 줄) */
+@media (max-width: 1024px) {
+    .map-under-icon {
+        width: 10rem;  /* 크기를 고정 */
+    }
+}
+
+/* 화면이 작은 경우 (하나씩 4줄) */
+@media (max-width: 768px) {
+    .map-under-icon {
+        width: 10rem;  /* 크기를 고정 */
+    }
+}
 .go-res{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5rem auto;
+    flex-wrap: wrap;
 }
 .go-res-tit{
     font-size: 2rem;
     font-weight: bold;
     padding: 1.5rem;
+    margin-right: 2rem;
 }
 .go-res a{
     text-decoration: none;
@@ -190,6 +258,7 @@ th:first-child, td:first-child {
     font-weight: bold;
     color: white;
     width: 15rem;
+    display: inline-block;
 }
 .go-res a::after{
     margin-left: 1rem;
