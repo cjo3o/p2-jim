@@ -6,31 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="/src/css/reset.css">
     <link rel="stylesheet" href="/src/css/reservation.css">
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const $menu = document.querySelector('.menu');
-            const $sub_menu_container = document.querySelector('.sub_menu_container');
-            const $sub_menu = document.querySelector('.sub_menu');
-
-            // 메뉴 위에 마우스가 올라갔을 때
-            $menu.addEventListener('mouseover', function () {
-                $sub_menu_container.classList.add('visible');
-            });
-
-            // 메뉴에서 마우스가 벗어났을 때
-            $menu.addEventListener('mouseout', function () {
-                $sub_menu_container.classList.remove('visible');
-            });
-
-            $sub_menu.addEventListener('mouseover', function () {
-                $sub_menu_container.classList.add('visible');
-            });
-
-            $sub_menu.addEventListener('mouseout', function () {
-                $sub_menu_container.classList.remove('visible');
-            });
-        });
-    </script>
 </head>
 
 <body>
@@ -125,7 +100,7 @@
 
     </div>
 </div>
-<script src="dropdown.js"></script>
+<script src="/dropdown.js"></script>
 </body>
 
 </html>

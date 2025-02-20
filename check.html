@@ -136,14 +136,16 @@
 <script>
         const $close = document.querySelector('.close');
         const $check_detail = document.querySelector('.check_detail');
+        const $check_detail_contents = document.querySelector('.check_detail_contents');
 
         $close.addEventListener('click', function () {
-            $check_detail.style.display = 'none';
+            $check_detail.classList.remove('fade_in');
+            $check_detail_contents.classList.remove('slide_up');
         })
 
         function openDetail() {
-            $check_detail.style.display = 'flex';
-            console.log($check_detail);
+            $check_detail.classList.add('fade_in');
+            $check_detail_contents.classList.add('slide_up');
         }
 
 </script>

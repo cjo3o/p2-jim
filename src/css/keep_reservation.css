@@ -194,7 +194,9 @@
 
 }
 
-.keep_location {
+.keep_location,
+.start_location,
+.arrive_location {
     overflow: hidden;
     z-index: 1111;
     background-color: rgba(0,0,0,0.4);
@@ -214,7 +216,9 @@
     height: 100%;
 }
 
-.keep_location_contents {
+.keep_location_contents,
+.start_location_contents,
+.arrive_location_contents {
     position: relative;
     background-color: white;
     width: 550px;
@@ -246,7 +250,9 @@
     color: #323232;
 }
 
-.keep_location_contents_header {
+.keep_location_contents_header,
+.start_location_contents_header,
+.arrive_location_contents_header {
     padding-bottom: 1.5rem;
     border-bottom: solid 1px #ccc;
 }
