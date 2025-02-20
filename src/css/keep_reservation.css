@@ -20,7 +20,7 @@
 
 .keep_reservation_contents {
     overflow: hidden;
-    width: 70%;
+    width: 1250px;
     margin: 4rem auto;
     padding: 0 1rem;
 }
@@ -124,7 +124,8 @@
     padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 100px;
 }
 
 .luggage_box {
@@ -143,6 +144,7 @@
 
 .luggage {
     display: flex;
+    justify-content: center;
 }
 
 .luggage > button {
@@ -221,8 +223,9 @@
 .arrive_location_contents {
     position: relative;
     background-color: white;
-    width: 550px;
+    width: 400px;
     padding: 1.5rem;
+    margin: 0 50px;
     border: solid 2px #ccc;
     border-radius: 10px;
     transform: translateY(400px);
@@ -312,4 +315,35 @@
 
 .submit_select > button:hover {
     background-color: #1776dd;
+}
+
+@media (max-width: 1250px) {
+    .keep_reservation_contents {
+        width: 95%;
+    }
+}
+
+@media (max-width: 920px) {
+    .keep_reservation_contents_main_box {
+        grid-template-columns: 1fr;
+    }
+    .keep_reservation_contents_main_luggage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .luggage_box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 540px) {
+    .keep_reservation_contents_main_luggage {
+        grid-template-columns: 1fr;
+    }
+
+    .luggage_box {
+        width: 80%;
+    }
 }
