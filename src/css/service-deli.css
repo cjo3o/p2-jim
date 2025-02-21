@@ -225,3 +225,20 @@ th:first-child, td:first-child {
     list-style-type: disc;
     line-height: 1.5rem;
 }
+#top-btn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #ffd400;
+    cursor: pointer;
+    padding: 9px 13px;
+    border-radius: 0.5rem;
+}
+#top-btn:hover{
+    background-color: gray;
+}
