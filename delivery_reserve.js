@@ -49,7 +49,6 @@ function openSelectLocation() {
         $start_location_contents.classList.add('up');
     }
     else if (!!$arrive_location) {
-        $start_location.style.display = 'none';
         $arrive_location.classList.add('fade_in');
         $arrive_location_contents.classList.add('up');
     }

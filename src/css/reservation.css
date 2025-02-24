@@ -8,9 +8,11 @@
 }
 
 .section1 {
-  background-color: rebeccapurple;
+  background: url("/src/images/images (5).jpg");
   width: 100%;
   height: 210px;
+  background-size: contain;
+  background-position: center;
 }
 
 .reservation_infor_container {
@@ -32,12 +34,43 @@
 .reservation_infor_text > h1 {
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.reservation_infor_text > p {
+  animation: slideUp 1s forwards;
+  animation-delay: 0.4s;
+  transform: translateY(100%);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .reservation_infor_contents_container {
   display: flex;
   gap: 2rem;
   justify-content: center;
+  transform: translateY(150%);
+  animation: slideUp 1.5s forwards;
+  animation-delay: 0.8s;
 }
 
 @media (max-width: 1250px) {
@@ -60,6 +93,7 @@
   border: solid 2px #787878;
   box-shadow: 0 0 5px #474747;
   transition: all 0.5s;
+
 }
 
 .reservation_infor_contents:hover {
