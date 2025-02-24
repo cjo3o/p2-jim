@@ -120,7 +120,36 @@ th:first-child, td:first-child {
     border-radius: 1rem;
     margin: 1rem;
     width: 13rem;
+    opacity: 0;
+    animation: slide-up 0.5s ease-out forwards; /* 애니메이션을 추가 */
 }
+
+@keyframes slide-up {
+    from{
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.use-icon:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.use-icon:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.use-icon:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.use-icon:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
 .use-icon:hover{
     background-color: rgba(238, 238, 238, 1);
 }
@@ -233,7 +262,6 @@ th:first-child, td:first-child {
     z-index: 99;
     font-size: 18px;
     border: none;
-    outline: none;
     background-color: #ffd400;
     cursor: pointer;
     padding: 9px 13px;
