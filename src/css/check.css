@@ -48,12 +48,12 @@
 }
 
 .check_container {
-    /*overflow: hidden;*/
+    overflow: hidden;
     width: 100%;
 }
 
 .check_contents {
-    /*overflow: hidden;*/
+    overflow: hidden;
     width: 80%;
     margin: 4rem auto;
     padding: 0 1rem;
@@ -79,6 +79,7 @@
 }
 
 .change_btn_container {
+    width: 1200px;
     text-align: right;
     margin: 0 auto;
 }
@@ -119,6 +120,7 @@
     animation-delay: 1s;
     opacity: 0;
     transform: translateY(100%);
+    width: 100%;
 }
 
 .keep_table {

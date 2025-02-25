@@ -28,12 +28,13 @@
 }
 
 .reservation_infor_container {
-  /*overflow: hidden;*/
+  overflow: hidden;
   text-align: center;
+  margin: 3rem 0;
 }
 
 .reservation_infor {
-  /*overflow: hidden;*/
+  overflow: hidden;
   margin-top: 3rem;
   text-align: center;
 }
@@ -96,15 +97,12 @@
 
 .reservation_infor_contents {
   background-color: #0066CC;
-  overflow: hidden;
   position: relative;
-  width: 470px;
-  height: 270px;
   margin: 3rem;
-  border-radius: 5px;
-  padding: 1rem;
+  border-radius: 40px;
+  padding: 3rem 1rem 3.5rem 1rem;
   cursor: pointer;
-  border: solid 2px #787878;
+  /*border: solid 2px #787878;*/
   box-shadow: 0 0 5px #474747;
   transition: all 0.5s;
 
@@ -121,16 +119,6 @@
   transition: all 0.5s;
 }
 
-/*.reservation_infor_contents_title {*/
-/*  background-color: #fff;*/
-/*  display: inline-block;*/
-/*  position: absolute;*/
-/*  transform: translate(-50%, -50%);*/
-/*  border: solid 1px #ccc;*/
-/*  border-radius: 10px;*/
-/*  top: 0;*/
-/*}*/
-
 .reservation_infor_contents_title > h2 {
   font-size: 1.7rem;
   padding: 1rem 1.5rem;
@@ -140,12 +128,15 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
 }
 
 .reservation_infor_contents_main_section {
   border-right: solid 1px rgba(255, 255, 255, 0.6);
-  padding: 0 0.8rem;
+  padding: 0 1.2rem;
+}
+
+.reservation_infor_contents_main_section:last-child {
+  border: none;
 }
 
 .reservation_infor_contents_main_section_img {
@@ -162,24 +153,44 @@
 }
 
 .reservation_infor_contents_main_section_text {
-  margin-top: 1rem;
+  margin-top: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9rem;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: #0066CC;
+  font-weight: bold;
 }
 
 .reservation_infor_contents_main_section_text > p {
   font-size: 1.1rem;
   font-weight: bold;
   color: white;
+  margin-top: 0.7rem;
 }
 
 .reservation_infor_contents_btn {
   position: absolute;
   bottom: 0;
-  left: 0;
-  background-color: #002eb8;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  background-color: #FF9900;
   display: block;
-  width: 100%;
+  width: 32%;
   line-height: 3rem;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
+  font-weight: bold;
   color: white;
+  border-radius: 25px;
 }
 

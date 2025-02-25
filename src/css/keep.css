@@ -47,8 +47,14 @@
     }
 }
 
+.section2 {
+    background: url("/src/images/reservebg2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .keep_container {
-    background-color: #efefef;
     width: 100%;
     overflow: hidden;
 }

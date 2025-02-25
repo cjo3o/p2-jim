@@ -36,6 +36,9 @@
                                     <img src="/src/images/pay.svg" alt="">
                                 </div>
                                 <div class="reservation_infor_contents_main_section_text">
+                                    <div class="index">
+                                        1
+                                    </div>
                                     <p>빠른 보관과 결제</p>
                                 </div>
                             </div>
@@ -44,6 +47,9 @@
                                     <img src="/src/images/keep.svg" alt="">
                                 </div>
                                 <div class="reservation_infor_contents_main_section_text">
+                                    <div class="index">
+                                        2
+                                    </div>
                                     <p>보관 맡기기</p>
                                 </div>
                             </div>
@@ -52,6 +58,9 @@
                                     <img src="/src/images/travel.svg" alt="">
                                 </div>
                                 <div class="reservation_infor_contents_main_section_text">
+                                    <div class="index">
+                                        3
+                                    </div>
                                     <p>여행의 시작</p>
                                 </div>
                             </div>
@@ -61,15 +70,15 @@
                         </div>
                     </div>
                     <div class="reservation_infor_contents" onclick="location.href='/delivery_reservation.html'">
-<!--                        <div class="reservation_infor_contents_title">-->
-<!--                            <h2>배송예약</h2>-->
-<!--                        </div>-->
                         <div class="reservation_infor_contents_main">
                             <div class="reservation_infor_contents_main_section">
                                 <div class="reservation_infor_contents_main_section_img">
                                     <img src="/src/images/online_reserve.svg" alt="">
                                 </div>
                                 <div class="reservation_infor_contents_main_section_text">
+                                    <div class="index">
+                                        1
+                                    </div>
                                     <p>온라인 배송 예약</p>
                                 </div>
                             </div>
@@ -78,6 +87,9 @@
                                     <img src="/src/images/delivery.svg" alt="">
                                 </div>
                                 <div class="reservation_infor_contents_main_section_text">
+                                    <div class="index">
+                                        2
+                                    </div>
                                     <p>배송 맡기기</p>
                                 </div>
                             </div>
@@ -86,6 +98,9 @@
                                     <img src="/src/images/find.svg" alt="">
                                 </div>
                                 <div class="reservation_infor_contents_main_section_text">
+                                    <div class="index">
+                                        3
+                                    </div>
                                     <p>짐찾기</p>
                                 </div>
                             </div>
@@ -97,6 +112,107 @@
                 </div>
             </div>
         </div>
+        <div class="section2">
+            <div class="check_detail">
+                <div class="check_detail_contents">
+
+                </div>
+            </div>
+            <div class="check_container">
+                <div class="check_contents">
+                    <div class="check_contents_text">
+                        <h1>보관/배송 내역 조회, 쉽고 빠르게</h1>
+                        <h3>보관 내역과 배송 현황을 한눈에! 실시간으로 확인하세요.</h3>
+                    </div>
+                    <div class="change_btn_container">
+                        <div class="change_btn">
+                            <div class="keep_btn active">
+                                보관
+                            </div>
+                            <div class="delivery_btn">
+                                배송
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_container">
+                        <div class="keep_table up">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>수화물 번호</th>
+                                    <th>보관 일자</th>
+                                    <th>보관 장소</th>
+                                    <th>가격</th>
+                                    <th>상태</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2025-02-13</td>
+                                    <td onclick="openDetail(this)">서울역</td>
+                                    <td>6000</td>
+                                    <td>보관중</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2025-02-14</td>
+                                    <td onclick="openDetail(this)">홍대입구</td>
+                                    <td>9000</td>
+                                    <td>보관중</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>2025-02-17</td>
+                                    <td onclick="openDetail(this)">명동</td>
+                                    <td>6000</td>
+                                    <td>보관완료</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="delivery_table">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>수화물 번호</th>
+                                    <th>배송 일자</th>
+                                    <th>도착지</th>
+                                    <th>가격</th>
+                                    <th>상태</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>4</td>
+                                    <td>2025-02-19</td>
+                                    <td onclick="openDetail(this)">홍대입구</td>
+                                    <td>2000</td>
+                                    <td>배송완료</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>2025-02-20</td>
+                                    <td onclick="openDetail(this)">서울역</td>
+                                    <td>16000</td>
+                                    <td>배송중</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>2025-02-23</td>
+                                    <td onclick="openDetail(this)">김포공항</td>
+                                    <td>5000</td>
+                                    <td>배송대기중</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <p style="width: 1200px; margin: 0 auto; opacity: 0; transform: translateY(100%); animation: slideUp 0.5s forwards; animation-delay: 1.5s">※ 보관장소를 클릭하시면 상세정보를 볼 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+
         <div class="keep_container">
             <div class="keep_contents">
                 <h1>편리한 보관, 스마트한 여행</h1>
@@ -192,104 +308,6 @@
                         <p>2</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="check_detail">
-            <div class="check_detail_contents">
-
-            </div>
-        </div>
-        <div class="check_container">
-            <div class="check_contents">
-                <div class="check_contents_text">
-                    <h1>보관/배송 내역 조회, 쉽고 빠르게</h1>
-                    <h3>보관 내역과 배송 현황을 한눈에! 실시간으로 확인하세요.</h3>
-                </div>
-                <div class="change_btn_container">
-                    <div class="change_btn">
-                        <div class="keep_btn active">
-                            보관
-                        </div>
-                        <div class="delivery_btn">
-                            배송
-                        </div>
-                    </div>
-                </div>
-                <div class="table_container">
-                    <div class="keep_table up">
-                        <table>
-                            <thead>
-                            <tr>
-                                <th>수화물 번호</th>
-                                <th>보관 일자</th>
-                                <th>보관 장소</th>
-                                <th>가격</th>
-                                <th>상태</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>2025-02-13</td>
-                                <td onclick="openDetail(this)">서울역</td>
-                                <td>6000</td>
-                                <td>보관중</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>2025-02-14</td>
-                                <td onclick="openDetail(this)">홍대입구</td>
-                                <td>9000</td>
-                                <td>보관중</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>2025-02-17</td>
-                                <td onclick="openDetail(this)">명동</td>
-                                <td>6000</td>
-                                <td>보관완료</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="delivery_table">
-                        <table>
-                            <thead>
-                            <tr>
-                                <th>수화물 번호</th>
-                                <th>배송 일자</th>
-                                <th>도착지</th>
-                                <th>가격</th>
-                                <th>상태</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>4</td>
-                                <td>2025-02-19</td>
-                                <td onclick="openDetail(this)">홍대입구</td>
-                                <td>2000</td>
-                                <td>배송완료</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>2025-02-20</td>
-                                <td onclick="openDetail(this)">서울역</td>
-                                <td>16000</td>
-                                <td>배송중</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>2025-02-23</td>
-                                <td onclick="openDetail(this)">김포공항</td>
-                                <td>5000</td>
-                                <td>배송대기중</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <p style="width: 1200px; margin: 0 auto; opacity: 0; transform: translateY(100%); animation: slideUp 0.5s forwards; animation-delay: 1.5s">※ 보관장소를 클릭하시면 상세정보를 볼 수 있습니다.</p>
             </div>
         </div>
     </div>
