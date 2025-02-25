@@ -8,39 +8,52 @@
 }
 
 .section1 {
-  background: url("/src/images/images (5).jpg");
+  background: url("/src/images/headerBg.png");
   width: 100%;
-  height: 210px;
-  background-size: contain;
+  height: 250px;
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section1 > h1 {
+  line-height: 100px;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  animation: slideUp 1.2s forwards;
 }
 
 .reservation_infor_container {
-  overflow: hidden;
+  /*overflow: hidden;*/
   text-align: center;
 }
 
 .reservation_infor {
-  overflow: hidden;
-  margin: 1.5rem 0;
+  /*overflow: hidden;*/
+  margin-top: 3rem;
   text-align: center;
 }
 
 .reservation_infor_text {
-  overflow: hidden;
   margin: 1rem;
 }
 
 .reservation_infor_text > h1 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-size: 2.5rem;
   opacity: 0;
   animation: fadeIn 1s forwards;
+  animation-delay: 0.5s;
 }
 
-.reservation_infor_text > p {
+.reservation_infor_text > h3 {
   animation: slideUp 1s forwards;
-  animation-delay: 0.4s;
+  animation-delay: 0.7s;
+  opacity: 0;
   transform: translateY(100%);
 }
 
@@ -67,9 +80,10 @@
 .reservation_infor_contents_container {
   display: flex;
   gap: 2rem;
+  opacity: 0;
   justify-content: center;
   transform: translateY(150%);
-  animation: slideUp 1.5s forwards;
+  animation: slideUp 1.2s forwards;
   animation-delay: 0.8s;
 }
 
@@ -81,7 +95,7 @@
 }
 
 .reservation_infor_contents {
-  background-color: #e3e3e3;
+  background-color: #0066CC;
   overflow: hidden;
   position: relative;
   width: 470px;
@@ -125,16 +139,18 @@
 .reservation_infor_contents_main {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 1rem;
 }
 
+.reservation_infor_contents_main_section {
+  border-right: solid 1px rgba(255, 255, 255, 0.6);
+  padding: 0 0.8rem;
+}
+
 .reservation_infor_contents_main_section_img {
-  background-color: #e8e8e8;
   width: 130px;
   height: 130px;
-  border: solid 2px black;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,6 +168,7 @@
 .reservation_infor_contents_main_section_text > p {
   font-size: 1.1rem;
   font-weight: bold;
+  color: white;
 }
 
 .reservation_infor_contents_btn {
