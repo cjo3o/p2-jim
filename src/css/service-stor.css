@@ -25,24 +25,44 @@ li{
     text-align: center;
     color: dodgerblue;
     font-weight: bold;
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     margin-top: 6rem;
     margin-bottom: 1rem;
 }
-.header-image{
-    width: 100%;
-    height: 210px;
-    background-image: url('/src/images/header.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 .sub-title{
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     margin-bottom: 3rem;
     line-height: 2rem;
 }
+.header-image{
+    margin-top: 87px;
+    width: 100%;
+    height: 250px;
+    background-image: url('/src/images/service.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header-image h3{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    line-height: 250px;
+    opacity: 0;
+    animation: slideUp 1.2s forwards;
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .search-btn-wrap{
     display: flex;
     justify-content: center;
@@ -85,13 +105,13 @@ li{
     margin: 1rem;
     width: 13rem;
     opacity: 0;
-    animation: slide-up 0.5s ease-out forwards; /* 애니메이션을 추가 */
+    animation: slide-up 1.2s ease-out forwards; /* 애니메이션을 추가 */
 }
 
 @keyframes slide-up {
     from{
         opacity: 0;
-        transform: translateY(-50%);
+        transform: translateY(100%);
     }
     to{
         opacity: 1;
@@ -139,7 +159,12 @@ li{
     margin: 1rem auto;
 }
 .price-of-storage{
-    margin-top: 2rem;
+    margin: 2rem auto;
+    background-color: rgba(246, 246, 246, 1);
+    width: 45rem;
+    height: 47rem;
+    padding: 1rem;
+    border-radius: 2rem;
 }
 .price-txt{
     display: flex;
@@ -152,11 +177,12 @@ li{
     color: whitesmoke;
     font-weight: bold;
     background-color: rgba(255, 153, 0, 1);
-    padding: 0.5rem;
     border-radius: 2rem;
     margin-right: 1rem;
     width: 5rem;
+    height: 1.5rem;
     text-align: center;
+    line-height: 1.5rem;
 }
 .price-txt-price{
     font-size: 1rem;

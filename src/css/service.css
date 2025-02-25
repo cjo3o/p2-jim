@@ -44,16 +44,34 @@ th:first-child, td:first-child {
     background-position: center;
     background-repeat: no-repeat;
 }
+.header-image h3{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    line-height: 250px;
+    opacity: 0;
+    animation: slideUp 1.2s forwards;
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 .title{
     text-align: center;
     color: dodgerblue;
     font-weight: bold;
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     margin-top: 6rem;
     margin-bottom: 1rem;
 }
 .sub-title{
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     margin-bottom: 3rem;
     line-height: 2rem;
@@ -238,7 +256,7 @@ th:first-child, td:first-child {
     flex-wrap: wrap;
 }
 .go-res-tit{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     padding: 1.5rem;
     margin-right: 2rem;
