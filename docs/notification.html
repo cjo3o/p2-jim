@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/notification.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const eventList = document.querySelector(".event-list");
+
+
+            events.forEach(event => {
+                const eventItem = document.createElement("div");
+                eventItem.classList.add("event-item");
+                eventItem.innerHTML = `
+            <img src="${event.img}" alt="${event.title}">
+            <div class="event-text">
+                <h3>${event.title}</h3>
+                <p>${event.date}</p>
+            </div>
+        `;
+                eventList.appendChild(eventItem);
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="header">
+
+    </div>
+    <div class="content">
+        <h3>W I T H G O</h3>
+        <h1>가벼운 여행의 시작, 위드고</h1>
+    </div>
+    <div class="section">
+        <div class="section-text">
+            <h2>
+                공지사항
+            </h2>
+            <div class="notice-list">
+                <div class="notice-item">
+                    <h3>새로운 서비스 출시 안내</h3>
+                    <p>2025년 3월 1일부터 새로운 서비스가 시작됩니다.</p>
+                </div>
+                <div class="notice-item">
+                    <h3>시스템 점검 안내</h3>
+                    <p>2025년 2월 28일 2:00 AM부터 5:00 AM까지 시스템 점검이 있습니다.</p>
+                </div>
+                <div class="notice-item">
+                    <h3>이벤트 참여 안내</h3>
+                    <p>2025년 3월 1일부터 다양한 이벤트가 진행됩니다. 많은 참여 부탁드립니다.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</div>
+<script src="/dropdown.js"></script>
+</body>
+
+</html>
