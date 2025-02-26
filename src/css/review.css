@@ -1,0 +1,93 @@
+.wrap {
+    background-color: #ccc;
+    width: 100%;
+    height: 1024px;
+}
+
+/* 본문 스타일 */
+.content {
+    margin-top: 87px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/src/images/review_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content h1 {
+    color:white;
+}
+.content h3 {
+    color: white;
+}
+.section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+}
+.section-text {
+    width: 1000px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: black;
+    font-size: 24px;
+}
+
+.section-text h2 {
+    margin-bottom: 20px; /* h2 아래에 간격을 20px로 띄움 */
+}
+
+.review-form {
+    margin-bottom: 20px;
+}
+
+#review-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+#review-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.review-list {
+    margin-top: 20px;
+}
+
+.review-item {
+    background-color: #f4f7fc;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.review-item h3 {
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.review-item p {
+    font-size: 1rem;
+    color: #666;
+}
