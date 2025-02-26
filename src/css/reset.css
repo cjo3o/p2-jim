@@ -223,6 +223,20 @@ ul, li {
     color: rgb(228, 228, 228);
     line-height: 1.5;
 }
+
+.footer > p > span {
+    display: inline-block;
+    color: rgb(228, 228, 228);
+}
+
+.footer > p > span:before {
+    content: " ";
+    display: inline-block;
+    margin: auto 10px;
+    height: 10px;
+    border-left: solid 1px rgb(228, 228, 228);
+}
+
 .footer-divider {
     width: 1px;
     height: 45px;
