@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("header.html")
+    fetch("/p2-jim/header.html")
         .then(response => response.text())
         .then(data => {
             document.querySelector('.header').innerHTML = data;
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // })
         });
 
-    fetch("footer.html")
+    fetch("/p2-jim/footer.html")
         .then(response => response.text())
         .then(data => {
             document.querySelector(".footer").innerHTML = data;
