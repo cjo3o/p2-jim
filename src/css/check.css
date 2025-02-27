@@ -55,7 +55,7 @@
 .check_contents {
     overflow: hidden;
     width: 80%;
-    margin: 4rem auto;
+    margin: 8rem auto;
     padding: 0 1rem;
 }
 
@@ -159,8 +159,6 @@ th, td {
 
 th {
     background-color: #ccc;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
 }
 
 th:nth-child(1) {
@@ -181,10 +179,6 @@ th:nth-child(4) {
 
 th:nth-child(5) {
     width: 15%;
-}
-
-tbody > tr {
-    border-bottom: 1px solid #bcbcbc;
 }
 
 td {
