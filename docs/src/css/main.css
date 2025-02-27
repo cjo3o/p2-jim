@@ -5,7 +5,8 @@ html, body {
     white-space: nowrap; /* 줄바꿈 방지 */
 }
 .wrap {
-    width: 1920px;
+    max-width: 1200px;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -395,7 +396,7 @@ button.submit img {
     justify-content: center;
     align-items: center;
 
-    background-image: url("/src/images/main_3.png");
+    background-image: url("src/images/main_3.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
