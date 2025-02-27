@@ -5,7 +5,8 @@ html, body {
     white-space: nowrap; /* 줄바꿈 방지 */
 }
 .wrap {
-    /*width: 1920px;*/
+    /*max-width: 1200px;*/
+    /*width: 100%;*/
     min-height: 100vh;
     display: flex;
     flex-direction: column;
