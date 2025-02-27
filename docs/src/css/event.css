@@ -11,16 +11,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(src/images/promotion_bg.png);
+    background-image: url(/p2-jim/src/images/promotion_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .content h1 {
-    color:white;
-}
-.content h3 {
     color: white;
+    text-align: center;
+    font-size: 30px;
+    line-height: 250px;
+    opacity: 0;
+    animation: slideUp 1.2s forwards;
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .section {
     display: flex;
@@ -30,6 +42,14 @@
     height: 100vh;
     background-color: white;
     position: absolute;
+}
+.title{
+    text-align: center;
+    color: rgb(0, 102, 204);
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
 }
 .section-text {
     width: 1000px;
