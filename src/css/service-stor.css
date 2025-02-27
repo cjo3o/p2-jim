@@ -23,14 +23,13 @@ li{
 }
 .title{
     text-align: center;
-    color: dodgerblue;
+    color: rgb(0, 102, 204);
     font-weight: bold;
     font-size: 1.8rem;
     margin-top: 6rem;
     margin-bottom: 1rem;
 }
 .sub-title{
-    font-size: 1rem;
     text-align: center;
     margin-bottom: 3rem;
     line-height: 2rem;
@@ -62,10 +61,11 @@ li{
         opacity: 1;
     }
 }
-
 .search-btn-wrap{
     display: flex;
     justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
 }
 .search-btn {
     width: 18rem;
@@ -106,6 +106,7 @@ li{
     width: 13rem;
     opacity: 0;
     animation: slide-up 1.2s ease-out forwards; /* 애니메이션을 추가 */
+    position: relative;
 }
 
 @keyframes slide-up {
@@ -138,11 +139,14 @@ li{
 }
 .use-step{
     color: white;
+    width: 150px;
     font-weight: bold;
     padding: 0.5rem;
     border-radius: 2rem;
-    background-color: rgba(255, 153, 0, 1);
-    margin-bottom: 1rem;
+    background-color: #ff8c00;
+    position: absolute;
+    top: 200px;
+    left: 29px;
 }
 .use-tit{
     font-weight: bold;
@@ -151,6 +155,7 @@ li{
 .use-txt{
     font-size: 1rem;
     text-align: center;
+    margin-bottom: 10px;
 }
 .use-icon img{
     width: 5rem;
@@ -176,7 +181,7 @@ li{
     font-size: 1rem;
     color: whitesmoke;
     font-weight: bold;
-    background-color: rgba(255, 153, 0, 1);
+    background-color: #ff8c00;
     border-radius: 2rem;
     margin-right: 1rem;
     width: 5rem;
