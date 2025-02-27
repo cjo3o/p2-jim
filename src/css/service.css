@@ -39,7 +39,7 @@ th:first-child, td:first-child {
     margin-top: 87px;
     width: 100%;
     height: 250px;
-    background-image: url('/src/images/service.png');
+    background-image: url('./src/images/service.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -64,14 +64,13 @@ th:first-child, td:first-child {
 }
 .title{
     text-align: center;
-    color: dodgerblue;
+    color: rgb(0, 102, 204);
     font-weight: bold;
     font-size: 1.8rem;
     margin-top: 6rem;
     margin-bottom: 1rem;
 }
 .sub-title{
-    font-size: 1rem;
     text-align: center;
     margin-bottom: 3rem;
     line-height: 2rem;
@@ -210,7 +209,7 @@ th:first-child, td:first-child {
 }
 .map-under-icon{
     margin: 1rem;
-    background-color: rgba(255, 153, 0, 1);
+    background-color: #ff8c00;
     padding: 1.5rem;
     border-radius: 1rem;
     width: 10rem;
@@ -222,10 +221,14 @@ th:first-child, td:first-child {
     font-size: 1.5rem;
     font-weight: bold;
 }
+.map-icon-title i{
+    color: white;
+}
 .map-icon-title p{
     display: inline-block;
+    color: white;
 }
-.map-icon-time{
+.map-icon-time p{
     color: white;
 }
 /* 기본 상태 (큰 화면에서 3개씩 한 줄) */
@@ -264,7 +267,7 @@ th:first-child, td:first-child {
 .go-res a{
     text-decoration: none;
     cursor: pointer;
-    background-color: dodgerblue;
+    background-color: rgb(0, 102, 204);
     border-radius: 1rem;
     padding: 1.2rem;
     margin: 1rem;
@@ -282,7 +285,7 @@ th:first-child, td:first-child {
     content: ">";
 }
 .go-res a:hover{
-    background-color: #0966C1;
+    background-color: #2A578A;
     transform: translateY(-5px) scale(1.05);
 }
 #top-btn{
