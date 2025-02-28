@@ -48,10 +48,12 @@
 }
 
 .section2 {
-    background: url("src/images/reservebg2.jpg");
+    background-image: url("src/images/reservebg2.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    background-color: #c5c5c5;
+    background-blend-mode: overlay;
 }
 
 .keep_container {
@@ -60,6 +62,8 @@
 }
 
 .keep_contents > h1 {
+    color: rgb(0, 102, 204);
+    font-size: 1.8rem;
     text-align: center;
     margin-top: 5rem;
     opacity: 0;
@@ -67,9 +71,13 @@
     animation-delay: 0.5s;
 }
 
-.keep_contents > h3 {
+.keep_contents > p {
     text-align: center;
     margin-top: 1rem;
+    animation: slideUp 1s forwards;
+    animation-delay: 0.7s;
+    opacity: 0;
+    transform: translateY(100%);
 }
 
 .keep_contents {

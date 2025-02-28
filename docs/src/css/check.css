@@ -65,12 +65,14 @@
 }
 
 .check_contents_text > h1 {
+    color: rgb(0, 102, 204);
+    font-size: 1.8rem;
     opacity: 0;
     animation: fadeIn 1s forwards;
     animation-delay: 0.5s;
 }
 
-.check_contents_text > h3 {
+.check_contents_text > p {
     margin-top: 1rem;
     animation: slideUp 1s forwards;
     animation-delay: 0.7s;
