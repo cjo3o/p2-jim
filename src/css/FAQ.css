@@ -152,7 +152,7 @@ body { font-family: Arial, sans-serif; }
 }
 .pagination {
     text-align: center;
-    margin-top: 20px;
+    margin-top: -25px;
     position: relative;
     z-index: 10;
     background-color: white;
