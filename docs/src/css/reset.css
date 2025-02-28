@@ -269,8 +269,7 @@ ul, li {
 }
 
 #COPYRIGHT {
-    position: absolute;
-    left: 70%;
+    margin-left: 250px;
     font-size: 10px;
 }
 
