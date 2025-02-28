@@ -11,13 +11,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     background-image: url(../src/images/review_bg.png);
+=======
+    background-image: url(/p2-jim/src/images/review_bg.png);
+>>>>>>> main
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .content h1 {
-    color:white;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    line-height: 250px;
+    opacity: 0;
+    animation: slideUp 1.2s forwards;
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .content h3 {
     color: white;
@@ -38,7 +57,11 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> main
     font-size: 24px;
 }
 

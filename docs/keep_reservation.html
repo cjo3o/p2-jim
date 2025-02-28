@@ -15,7 +15,7 @@
     </div>
     <div class="contents">
         <div class="section1">
-            <h1>ABOUT WITH GO</h1>
+            <h1>TRIP WITH EASE</h1>
         </div>
         <div class="keep_location">
             <div class="keep_location_contents">
@@ -81,29 +81,30 @@
         <div class="keep_reservation_contents_container">
             <div class="keep_reservation_contents">
                 <div class="keep_reservation_contents_text">
-                    <h1>보관예약 안내</h1>
-                    <p>보관장소와 일자를 선택해 주세요.</p>
+                    <h1>안전하고 편리하게! 스마트 보관 예약</h1>
+                    <p>빠르고 쉬운 보관예약! 언제 어디서든 간편하게 맡기고 찾으세요.</p>
                 </div>
                 <div class="keep_reservation_contents_main">
                     <div class="keep_reservation_contents_main_date">
-                        <div class="keep_reservation_contents_main_title">
-                            <p>보관 일자, 장소 선택</p>
+                        <div class="keep_reservation_contents_main_title_box">
+                            <div class="keep_reservation_contents_main_title">
+                                <p>보관 일자</p>
+                            </div>
+                            <div class="keep_reservation_contents_main_title">
+                                <p>보관 장소</p>
+                            </div>
                         </div>
+
                         <div class="keep_reservation_contents_main_box">
                             <div class="keep_reservation_contents_main_box_input-box">
-                                <div class="input-box_title">
-                                    보관 일자
-                                </div>
                                 <div class="input-box_content">
                                     <input type="date" name="" id="date" placeholder="보관 일자">
                                 </div>
                             </div>
                             <div class="keep_reservation_contents_main_box_input-box">
-                                <div class="input-box_title">
-                                    보관 장소
-                                </div>
                                 <div class="input-box_content">
-                                    <input type="text" name="" id="location" placeholder="보관 장소" onclick="openKeepLocation()" value="" readonly>
+                                    <input type="text" name="" id="location" placeholder="보관 장소"
+                                           onclick="openKeepLocation()" value="" readonly>
                                 </div>
                             </div>
                         </div>
@@ -155,75 +156,78 @@
                     </div>
                     <div class="agreement_container">
                         <div class="agreement">
-                            <input type="checkbox" name="" id="agree"/>
+                            <input type="checkbox" name="" id="agree">
                             <label for="agree">
                                 이용약관에 동의합니다.
                             </label>
                         </div>
                         <a href="#">
-                            [ 이용약관 보기 ]
+                            이용약관 보기
                         </a>
                     </div>
                     <div class="keep_reservation_contents_main_luggage_infor">
                         <div class="keep_reservation_contents_main_title">
-                            <p>수화물 정보</p>
-                        </div>
-                        <div class="keep_reservation_contents_main_luggage">
-                            <div class="luggage_box">
-                                <div class="luggage_box_img">
-                                    <img src="src/images/small.svg" alt="소형">
-                                </div>
-                                <div class="luggage_box_content">
-                                    <h4>소형</h4>
-                                    <div class="luggage" data-price="1000">
-                                        <button id="sm" onclick="minus(this)">-</button>
-                                        <input type="text" name="" id="small" value="0" readonly>
-                                        <button id="sp" onclick="plus(this)">+</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="luggage_box">
-                                <div class="luggage_box_img">
-                                    <img src="src/images/medium.svg" alt="중형">
-                                </div>
-                                <div class="luggage_box_content">
-                                    <h4>중형</h4>
-                                    <div class="luggage" data-price="3000">
-                                        <button id="mm" onclick="minus(this)">-</button>
-                                        <input type="text" name="" id="medium" value="0" readonly>
-                                        <button id="mp" onclick="plus(this)">+</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="luggage_box">
-                                <div class="luggage_box_img">
-                                    <img src="" alt="대형">
-                                </div>
-                                <div class="luggage_box_content">
-                                    <h4>대형</h4>
-                                    <div class="luggage" data-price="5000">
-                                        <button id="lm" onclick="minus(this)">-</button>
-                                        <input type="text" name="" id="large" value="0" readonly>
-                                        <button id="lp" onclick="plus(this)">+</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="keep_reservation_contents_main_date">
-                        <div class="keep_reservation_contents_main_title">
                             <p>요금안내</p>
                         </div>
-                        <div class="payment_infor">
-                            <h2>예상가격 (VAT포함)</h2>
-                            <h1>KRW <span id="total_price">0</span></h1>
+                        <div class="keep_reservation_contents_main_luggage">
+                            <div class="luggage_box_container">
+                                <div class="luggage_box">
+                                    <div class="luggage_box_img">
+                                        <img src="src/images/small.svg" alt="소형">
+                                    </div>
+                                    <div class="luggage_box_content">
+                                        <h2>소형</h2>
+                                    </div>
+                                </div>
+                                <div class="luggage" data-price="1000">
+                                    <button class="m" onclick="minus(this)">-</button>
+                                    <input type="text" name="" id="small" value="0" readonly>
+                                    <button class="p" onclick="plus(this)">+</button>
+                                </div>
+                            </div>
+                            <div class="luggage_box_container">
+                                <div class="luggage_box">
+                                    <div class="luggage_box_img">
+                                        <img src="src/images/medium.svg" alt="중형">
+                                    </div>
+                                    <div class="luggage_box_content">
+                                        <h2>중형</h2>
+                                    </div>
+                                </div>
+                                <div class="luggage" data-price="3000">
+                                    <button class="m" onclick="minus(this)">-</button>
+                                    <input type="text" name="" id="medium" value="0" readonly>
+                                    <button class="p" onclick="plus(this)">+</button>
+                                </div>
+                            </div>
+                            <div class="luggage_box_container">
+                                <div class="luggage_box">
+                                    <div class="luggage_box_img">
+                                        <img src="src/images/large.svg" alt="대형">
+                                    </div>
+                                    <div class="luggage_box_content">
+                                        <h2>대형</h2>
+                                    </div>
+                                </div>
+                                <div class="luggage" data-price="5000">
+                                    <button class="m" onclick="minus(this)">-</button>
+                                    <input type="text" name="" id="large" value="0" readonly>
+                                    <button class="p" onclick="plus(this)">+</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="keep_reserve_btn">
-                    <button>
-                        보관 예약
-                    </button>
+                    <div class="keep_reservation_contents_main_payment">
+                        <div class="payment_infor">
+                            <h1>예상가격 <h3>(VAT포함)</h3></h1>
+                            <h2>KRW <span id="total_price">0</span></h2>
+                        </div>
+                        <div class="keep_reserve_btn">
+                            <button>
+                                보관 예약
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
