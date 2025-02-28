@@ -171,6 +171,12 @@ button.submit {
     gap: 5px;
     letter-spacing: 0.5px;
 }
+
+button.submit > a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
 button.submit img {
     width: 11px;
     margin-left: 5px;
