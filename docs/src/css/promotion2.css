@@ -31,7 +31,12 @@
     font-weight: bold;
     font-size: 1.8rem;
     margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+.sub-title{
+    text-align: center;
     margin-bottom: 3rem;
+    line-height: 2rem;
 }
 .tab_btn ul{
     display: flex;
