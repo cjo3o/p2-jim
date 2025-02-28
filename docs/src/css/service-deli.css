@@ -64,23 +64,16 @@ th:first-child, td:first-child {
 }
 .title{
     text-align: center;
-    color: dodgerblue;
+    color: rgb(0, 102, 204);
     font-weight: bold;
     font-size: 1.8rem;
     margin-top: 6rem;
     margin-bottom: 1rem;
 }
 .sub-title{
-    font-size: 1rem;
     text-align: center;
     margin-bottom: 3rem;
     line-height: 2rem;
-}
-.local{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8rem;
 }
 .local-icon{
     display: flex;
@@ -92,6 +85,12 @@ th:first-child, td:first-child {
     background-color: rgba(51, 133, 214, 0.8);
     border-radius: 50%;
     margin: -0.8rem;
+}
+.local{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
 }
 .local-icon2{
     display: flex;
@@ -148,6 +147,18 @@ th:first-child, td:first-child {
     width: 13rem;
     opacity: 0;
     animation: slide-up 1.2s ease-out forwards; /* 애니메이션을 추가 */
+    position: relative;
+}
+.use-step{
+    color: white;
+    width: 150px;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    background-color: #ff8c00;
+    position: absolute;
+    top: 200px;
+    left: 29px;
 }
 
 @keyframes slide-up {
@@ -159,7 +170,9 @@ th:first-child, td:first-child {
         opacity: 1;
         transform: translateY(0%);
     }
+
 }
+
 .use-icon:nth-child(1) {
     animation-delay: 0s;
 }
@@ -175,17 +188,8 @@ th:first-child, td:first-child {
 .use-icon:nth-child(4) {
     animation-delay: 0.6s;
 }
-
 .use-icon:hover{
     background-color: rgba(238, 238, 238, 1);
-}
-.use-step{
-    color: white;
-    font-weight: bold;
-    padding: 0.5rem;
-    border-radius: 2rem;
-    background-color: rgba(255, 153, 0, 1);
-    margin-bottom: 1rem;
 }
 .use-tit{
     font-weight: bold;
@@ -194,6 +198,7 @@ th:first-child, td:first-child {
 .use-txt{
     font-size: 1rem;
     text-align: center;
+    margin-bottom: 10px;
 }
 .use-icon img{
     width: 5rem;
